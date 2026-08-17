@@ -1,0 +1,46 @@
+{
+  "best_model": "XGBoost (depth=10, lr=0.03, n=400)",
+  "best_accuracy": 0.9635,
+  "target_met": true,
+  "all_results": [
+    {
+      "model": "XGBoost (depth=8, lr=0.05, n=300)",
+      "accuracy": 0.963075,
+      "precision": 0.782046256370051,
+      "recall": 0.684156378600823,
+      "f1": 0.7298335467349552,
+      "roc_auc": 0.980305463413133,
+      "time": 3.2463114261627197
+    },
+    {
+      "model": "XGBoost (depth=10, lr=0.03, n=400)",
+      "accuracy": 0.9635,
+      "precision": 0.7914331465172137,
+      "recall": 0.6779835390946503,
+      "f1": 0.7303287772441818,
+      "roc_auc": 0.980086158158862,
+      "time": 5.716992139816284
+    },
+    {
+      "model": "Random Forest (n=300, depth=25)",
+      "accuracy": 0.96205,
+      "precision": 0.7954353338968724,
+      "recall": 0.6454046639231824,
+      "f1": 0.7126088602801969,
+      "roc_auc": 0.9789672805993113,
+      "time": 28.257925033569336
+    },
+    {
+      "model": "Gradient Boosting (n=200, depth=6)",
+      "accuracy": 0.963475,
+      "precision": 0.7809965237543454,
+      "recall": 0.6934156378600823,
+      "f1": 0.7346049046321526,
+      "roc_auc": 0.9807372122519017,
+      "time": 378.72914934158325
+    }
+  ],
+  "sample_size": 200000,
+  "feature_count": 72,
+  "trained_at": "2026-07-31T03:08:43.368467"
+}

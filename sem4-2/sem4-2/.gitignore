@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+.env
+venv/
+__pycache__/
+*.pyc
+serviceAccount.json
+
+# Large data files
+data/*.csv
+data/*.json
+
+# Large ML model binaries
+ML/models/*.pkl
+ML/models/**/*.pkl
