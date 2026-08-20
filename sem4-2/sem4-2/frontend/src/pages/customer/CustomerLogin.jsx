@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Shield,
@@ -172,12 +172,12 @@ export function CustomerLogin() {
 
           {/* Footer links */}
           <div className="mt-5 pt-5 border-t border-slate-200 dark:border-white/10 flex flex-col gap-2.5 text-center">
-            <a
-              href="/india/login"
+            <Link
+              to="/india/login"
               className="inline-flex items-center justify-center gap-1.5 text-xs text-orange-500 dark:text-orange-400 hover:text-orange-600 dark:hover:text-orange-300 font-medium transition-colors"
             >
               🇮🇳 Access India Operations Panel →
-            </a>
+            </Link>
           </div>
         </div>
 

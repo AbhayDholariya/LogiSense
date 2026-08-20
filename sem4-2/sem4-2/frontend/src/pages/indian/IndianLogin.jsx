@@ -5,7 +5,7 @@
  */
 
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Truck,
@@ -238,12 +238,12 @@ export function IndianLogin() {
             className="mt-6 pt-6 text-center transition-colors"
             style={{ borderTop: theme === "dark" ? "1px solid rgba(255,255,255,0.08)" : "1px solid rgba(0,0,0,0.08)" }}
           >
-            <a
-              href="/customer/login"
+            <Link
+              to="/customer/login"
               className="inline-flex items-center gap-1.5 text-xs text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 font-bold transition-colors"
             >
               👤 Customer Portal Login →
-            </a>
+            </Link>
           </div>
         </div>
 
