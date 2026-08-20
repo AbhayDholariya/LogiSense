@@ -139,7 +139,7 @@ def _get_llm():
     global _llm_agent
     if _llm_agent is None:
         try:
-            from ML.ecommerce_b2b.llm_agent import IndianSupplyChainLLMAgent
+            from api.llm_agent import IndianSupplyChainLLMAgent
             _llm_agent = IndianSupplyChainLLMAgent()
         except Exception as e:
             logger.warning(f"LLM agent not available: {e}")
