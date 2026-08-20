@@ -53,7 +53,8 @@ export function CustomerDashboard() {
 
     async function loadShipments() {
       try {
-        const response = await fetch("/api/india/shipments");
+        const API_BASE = import.meta.env.VITE_API_URL || "";
+        const response = await fetch(`${API_BASE}/api/india/shipments`);
         if (!response.ok) {
           throw new Error(`Error: ${response.status} ${response.statusText}`);
         }

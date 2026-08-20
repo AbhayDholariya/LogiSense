@@ -77,7 +77,8 @@ export function CustomerChatbot() {
         content: m.content,
       }));
 
-      const res = await fetch("/api/customer/chat", {
+      const API_BASE = import.meta.env.VITE_API_URL || "";
+      const res = await fetch(`${API_BASE}/api/customer/chat`, {
         method: "POST",
         headers,
         body: JSON.stringify({ messages: payloadMessages }),
